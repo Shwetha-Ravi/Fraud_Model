@@ -1,0 +1,27 @@
+# ── Data files — store in S3 ──────────────────────────
+data/
+*.csv
+*.parquet
+*.xlsx
+# ── Model files — store in S3 or MLflow ───────────────
+models/
+*.pkl
+*.joblib
+*.h5
+# ── Secrets — NEVER commit ────────────────────────────
+.env
+.env.*
+secrets.yaml
+*.key
+*.pem
+# ── Python environment ─────────────────────────────────
+venv/
+env/
+__pycache__/
+*.pyc
+# ── OS files ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+# ── Logs ───────────────────────────────────────────────
+*.log
+logs/
